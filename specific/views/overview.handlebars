@@ -1,0 +1,34 @@
+
+{{> head}}
+<body>
+    <script src="/src/overview.js"></script>
+    {{> navigation}}
+    
+    <main>
+        <h1>{{__HEADING__}}</h1>
+        <table width="100%" border="1" bordercolor="#cccccc" cellpadding="5" cellspacing="5">
+            <tr>
+                <th colspan="7">{{__FIRST_DATE__}} - {{__LAST_DATE__}}</th>
+            </tr>
+            <td></td>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            </tr>
+            {{#each __ATTENDANCES__}}
+             <tr>
+            <td>{{ name }}</td>
+            {{> attendancetimeentry __TIME_ARRIVING__ = monday.arriving __TIME_LEAVING__ = monday.leaving}}
+            {{> attendancetimeentry __TIME_ARRIVING__ = tuesday.arriving __TIME_LEAVING__ = tuesday.leaving}}
+            {{> attendancetimeentry __TIME_ARRIVING__ = wednesday.arriving __TIME_LEAVING__ = wednesday.leaving}}
+            {{> attendancetimeentry __TIME_ARRIVING__ = thursday.arriving __TIME_LEAVING__ = thursday.leaving}}
+            {{> attendancetimeentry __TIME_ARRIVING__ = friday.arriving __TIME_LEAVING__ = friday.leaving}}
+            </tr>
+            {{/each}}
+          
+        </table>
+    </main>
+</body>
+{{> footer}}

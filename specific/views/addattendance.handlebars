@@ -1,0 +1,27 @@
+{{> head}}
+
+<body>
+    <script src="src/addattendance.js"></script>
+    {{> navigation}}
+    <main>
+        <h1>{{__HEADING__}}</h1>
+    </main>
+    <form method="POST" action="/addattendance">
+        <div class="content-panel">
+            <fieldset>
+                <label class="form-label" for="date">Date: </label>
+                <input type="date" id="date" name="date"><br>
+                <label class="form-label" for="arrival">Arriving: </label>
+                <input type="time" name="arrival" id="arrival"><br>
+                <label class="form-label" for="departure">Leaving: </label>
+                <input type="time" id="departure" name="departure"><br>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Save">
+            </fieldset>
+        </div>
+    </form>
+    <input id="test" class="input">
+
+</body>
+{{> footer}}

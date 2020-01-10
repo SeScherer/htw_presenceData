@@ -1,0 +1,48 @@
+[
+    {
+        "name":"Sebastian Scherer",
+        "monday":{
+            "arriving":"08:00",
+            "leaving":"16:30"
+        },
+        "tuesday":{
+            "arriving":"08:00",
+            "leaving":"16:30"
+        },
+        "wednesday":{
+            "arriving":"08:00",
+            "leaving":"16:30"
+        },
+        "thursday":{
+            "arriving":"08:00",
+            "leaving":"16:30"
+        },
+        "friday":{
+            "arriving":"08:00",
+            "leaving":"16:30"
+        }
+    },
+    {
+        "name":"Andreas Morsing",
+        "monday":{
+            "arriving":"07:00",
+            "leaving":"15:30"
+        },
+        "tuesday":{
+            "arriving":"07:00",
+            "leaving":"15:30"
+        },
+        "wednesday":{
+            "arriving":"07:00",
+            "leaving":"15:30"
+        },
+        "thursday":{
+            "arriving":"07:00",
+            "leaving":"15:30"
+        },
+        "friday":{
+            "arriving":"07:00",
+            "leaving":"15:30"
+        }
+    }
+]

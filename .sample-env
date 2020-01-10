@@ -1,0 +1,8 @@
+PORT=<Port the server should listen to>
+SESSION_SECRET=<String to crypt session data>
+
+USER_PASSWORD_SALT_ROUNDS=<Number of salt rounds for Userpassword>
+
+DB_URL=<Postgres Database URL>
+DB_USER=<Postgres username>
+DB_PASSWORD=<Postgres password>

@@ -1,0 +1,18 @@
+<nav>
+    <ul class="navigation">
+        {{#if __IS_LOGGED_IN__ }}
+        <li><a href="/overview" class="nav-link {{#if __OVERVIEW_ACTIVE__}}active{{/if}}">Overview</a></li>
+        <li><a href="/addattendance" class="nav-link {{#if __ADDATTENDANCE_ACTIVE__}}active{{/if}}">Add Attendance</a>
+        </li>
+        <li><a href="/settings" class="nav-link {{#if __SETTINGS_ACTIVE__}}active{{/if}}">Settings</a></li>
+        <li><a href="/logout" class="nav-link">Logout</a></li>
+        {{else}}
+        <li><a href="/login" class="nav-link {{#if __LOGIN_ACTIVE__}}active{{/if}}">Login</a></li>
+        {{/if}}
+    </ul>
+    {{#if __IS_LOGGED_IN__}}
+    <div class="user-info">
+        Logged in as {{__USER__.firstName}} {{__USER__.lastName}}
+    </div>
+    {{/if}}
+</nav>
